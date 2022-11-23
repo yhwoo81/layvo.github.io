@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* 상단 배경이미지 */
+.sub_bg {
+	background: url(../img/history_bg.png) no-repeat 50%;
+}
+
+/* 연혁 컨텐츠 */
+.wrap {
+	overflow: hidden;
+}
+.center {
+	text-indent: -9999px;
+	display: inline-block;
+	width: 32px; height: 951px;
+	background: url(../img/history_bar.png) no-repeat;
+	position: absolute;
+	left: 50%; top: 355px; transform: translateX(-50%);
+}
+.history_left, .history_right {
+	width: 50%; float: left;
+}
+.history_left {
+	text-align: right;
+	padding-right: 60px;
+}
+.history_right {
+	text-align: left;
+	padding-left: 60px;
+}
+.history_right img {
+	margin-top: 144px; width: 100%;
+}
+.small_img {
+	display: none;
+}
+.history_left h2 {
+	margin: 130px 0 143px;
+}
+.wrap p {
+	font-size: 2.4rem;
+	margin: 10px 0 50px;
+}
+.wrap .gray {
+	font-size: 4.8rem; color: #7c7c7c;
+	margin: 35px 0 60px;
+}
+.wrap .blue {
+	font-size: 3.4rem; color: #3C80FF;
+	margin-bottom: 0;
+}
+.wrap .history_left .gray {
+    margin-bottom:74px;
+}
+.wrap p.mobile {
+    display:none;
+}
+
+/********* 모바일:1024px이하 *********/
+
+@media screen and ( max-width: 1023px ) {
+	.history_left img {
+		width: 290px;
+	}
+	.history_left h2 {
+		margin-bottom: 214px;
+	}
+}
+
+/********* 모바일:768px이하 *********/
+
+@media screen and ( max-width: 767px ) {
+	.wrap p {
+		font-size: 1.4rem;
+		margin: 5px 0 56px;
+	}
+	.wrap .gray {
+		font-size: 2.8rem;
+		margin: 6px 0 65px;
+	}
+	.wrap .blue {
+		font-size: 1.8rem;
+	}
+	.center {
+		top: 155px; height: 760px;
+	}
+	.history_left h2 {
+		margin: 50px 0 259px;
+		overflow: hidden;
+	}
+	h2 img {
+		width: 140px;
+	}
+	.big_img { display: none; }
+	.small_img { display: block; }
+	.center {
+		width: 25px;
+		background-size: contain;
+	}
+	.history_left {
+		padding-right: 20px;
+	}
+	.history_left img {
+		width: 140px;
+		float: right;
+	}
+	.history_right {
+		padding-left: 20px;
+	}
+	.history_right img {
+		width: 140px;
+	}
+/*
+	.wrap .box_size {
+		float: right;
+		margin: 0 0 85px;
+		width: 100%;
+	}
+*/
+	.top {
+		bottom: 0;
+	}
+	.top p {
+		margin: 0;
+		font-size: 1.1rem;
+	}
+    .wrap p.pc {
+        display: none;
+    }
+    .wrap p.mobile {
+        display:block;
+    }
+}

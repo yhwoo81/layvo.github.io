@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* CEO 컨텐츠 */
+.title p {
+	font-size: 3.4rem;
+	margin-bottom: 20px;
+}
+.title h2 {
+	font-size: 5rem; font-weight: 700;
+	margin: 20px 0 60px 0;
+}
+.contents_txt {
+	font-size: 1.8rem;
+	line-height: 1.6;
+	width: 53%;
+}
+.contents_txt .strong {
+	font-weight: 700;
+	font-size: 2.2rem;
+}
+.contents_txt .size {
+	font-size: 2.5rem;
+}
+.contents_img {
+	position: absolute;
+	right: 0; top: 340px;
+}
+
+/* top 버튼 */
+.top {
+	bottom: 0;
+}
+
+/* 노란 동그라미 */
+.y-circle span {
+    position:relative;
+}
+.y-circle span:after {
+    content:""; display:block;
+    width:6px; height:6px;
+    border-radius:100px;
+    background-color:#FDD400;
+    position:absolute; top:-12px; left:50%;
+    transform:translateX(-50%);
+}
+
+/********* pc:1300px이하 *********/
+@media screen and ( max-width : 1299px ) {
+	.sub_bg {
+		background-position: 70% 50%;
+	}
+	.title p {
+		font-size: 2.6rem;
+	}
+	.title h2 {
+		font-size: 3.8rem;
+	}
+	.contents_txt {
+		font-size: 1.4rem;
+	}
+	.contents_txt .strong {
+		font-size: 2rem;
+	}
+	.contents_img {
+		width: 47%;
+		top: 440px;
+	}
+	.contents_img img {
+		width: 95%;
+	}
+} 
+
+/********* 태블릿:1024px이하 *********/
+@media screen and ( max-width : 1023px ) {
+	.title p {
+		font-size: 1.8rem;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	.title h2 {
+		font-size: 2.8rem;
+		text-align: left;
+		margin: 15px 0 50px;
+	}
+	.contents_txt {
+		width: 100%;
+	}
+	.contents_txt p {
+		font-size: 1.4rem;
+	}
+	.contents_txt p:nth-child(4) {
+		margin-top: 500px;
+	}
+	.contents_img {
+		right: auto; left: 50%; top: 600px;
+		transform: translateX(-50%);
+		width: 450px; 
+	}
+	.contents_img img {
+		width: 90%;
+		display: block;
+	}
+	.contents_txt .size {
+		font-size: 2rem;
+	}
+}
+
+
+/********* 모바일:768px이하 *********/
+
+@media screen and ( max-width : 767px ) {
+	.sub_bg {
+		background-position: 70% 50%;
+	}
+	.title p, .title h2 {
+		text-align: center;
+	}
+	.title p {
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+	.title h2 {
+		font-size: 2.4rem;
+		margin: 10px 0 30px;
+	}
+	.contents_txt .strong {
+		font-size: 1.6rem;
+	}
+	.contents_txt p:nth-child(4) {
+		margin-top: 390px;
+	}
+	.contents_img {
+		top: 535px;
+		width: 360px; 
+	}
+    .y-circle span:after {
+        width:4px; height:4px;
+        top:-8px;
+    }
+}
+
+/* 대표님 이미지 위치 수정 */
+@media screen and (min-width:512px) and (max-width:767px) {
+    .contents_img {
+        top: 485px;
+    }
+}

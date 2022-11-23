@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* 상단 배경이미지 */
+.sub_bg {
+	background: url(../img/cibi_bg.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+/* TAB */
+.tab {
+	width: 100%;
+}
+.tab a {
+	display: block;
+	width: 50%; height: 50px;
+	float: left;
+	text-align: center;
+	font-size: 2.4rem; font-weight: 700;
+	border: 1px solid #ccc;
+	background-color: #f6f6f6;
+	line-height: 50px;
+}
+.tab a:first-child {
+	border-right: none;
+}
+.tab .tab_on {
+	border-top: 3px solid #3c80ff;
+	border-bottom: 0;
+	background-color: #fff;
+}
+
+/* CI 컨텐츠 */
+.ci_contents { display: block; }
+.bar_blue {
+	margin-bottom: 30px;
+}
+.wrap h1 {
+	margin-top: 130px;
+}
+.wrap > div > p {
+	font-size: 1.8rem;
+	text-align: center;
+	line-height: 1.6;
+	margin-bottom: 70px;
+}
+.section {
+	border-top: 1px solid #d6d6d6;
+	position: relative;
+	clear: both;
+	padding: 60px 0;
+}
+.line {
+	width: 200px;
+	border: 1px solid #444;
+	position: absolute;
+	top: -1px; left: 0;
+}
+.section h2 {
+	font-size: 3.8rem;
+	display: inline-block;
+	width: 300px;
+	font-weight: 500;
+}
+.section .sec_right {
+	float: right; width: 880px;
+}
+.section > p {
+	font-size: 1.6rem; line-height: 1.6;
+	width: 880px; 
+	float: right;
+	margin-bottom: 60px;
+}
+.section li {
+	float: left;
+	padding: 4.5px;
+}
+.section li:last-child {
+	/*padding-right: 0;*/
+}
+.section:last-of-type li:last-child {
+	/*padding-right: 0;*/
+}
+.section:last-of-type li p {
+	font-size: 1.4rem; color: #6d6d6d;
+}
+
+/* BI 컨텐츠 */
+.bi_contents { display: none; }
+
+/* top 버튼 */
+.top {
+	bottom: 0;
+}
+
+/********* 모바일:1300px이하 *********/
+@media screen and ( max-width : 1299px ) {
+	.wrap > div > p {
+		font-size: 1.5rem;
+	}
+	.section h2 {
+		font-size: 3rem;
+		margin-top: 0;
+		width: auto;
+	}
+	.section .sec_right {
+		width: 83%;
+	}
+	.section .sec_right img {
+		width: 100%;
+	}
+	.section > p {
+		font-size: 1.4rem;
+		width: 83%;
+		margin-top: 0;
+	}
+	.sec_right ul {
+		width: 100%;
+	}
+	.sec_right li {
+		width: 33.3333%;
+	}
+}
+
+/********* 모바일:768px이하 *********/
+@media screen and ( max-width : 767px ) {
+	.sub_bg {
+		background-position: 30% 50%;
+	}
+	.tab a  {
+		height: 40px;
+		font-size: 1.6rem;
+		line-height: 40px;
+	}
+	.wrap h1 {
+		margin-top: 75px;
+	}
+	.wrap > div > p {
+		font-size: 1.4rem;
+	}
+	.section {
+		padding: 20px 0 35px;
+	}
+	.line {
+		width: 60px;
+	}
+	.section h2 {
+		font-size: 1.6rem;
+	}
+	.section .sec_right {
+		width: 100%;
+	}
+	.sec_right img {
+		width: 100%;
+	}
+	.section > p {
+		font-size: 1.2rem;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.section li {
+		padding: 0;
+	}
+	.sec_right ul {
+		width: 100%;
+	}
+	.sec_right li {
+		width: 33.3333%;
+	}
+	.section:last-of-type li p {
+		font-size: 0.8rem;
+	}
+	.section:last-of-type li {
+		padding-right: 3px;
+	}
+}

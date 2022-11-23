@@ -1,0 +1,22 @@
+<svg width="65" height="55" viewBox="0 0 65 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect x="6.25" y="10.8057" width="52.5" height="35.3889" rx="1.75" stroke="#444444" stroke-width="2.5"/>
+<rect x="13.5833" y="2.25" width="13.3889" height="39.0556" rx="2.75" fill="white" stroke="#444444" stroke-width="2.5"/>
+<rect x="33.1111" y="15.667" width="19.5556" height="4.88889" rx="2.44444" fill="#3C80FF"/>
+<circle cx="35.5555" cy="25.4444" r="2.44444" fill="#444444"/>
+<circle cx="35.5555" cy="32.7775" r="2.44444" fill="#444444"/>
+<circle cx="35.5555" cy="40.1114" r="2.44444" fill="#444444"/>
+<circle cx="42.8889" cy="25.4444" r="2.44444" fill="#444444"/>
+<circle cx="42.8889" cy="32.7775" r="2.44444" fill="#444444"/>
+<circle cx="42.8889" cy="40.1114" r="2.44444" fill="#444444"/>
+<circle cx="50.2222" cy="25.4444" r="2.44444" fill="#444444"/>
+<circle cx="50.2222" cy="32.7775" r="2.44444" fill="#444444"/>
+<circle cx="50.2222" cy="40.1114" r="2.44444" fill="#444444"/>
+<path d="M19.6666 40.1113V49.8891C19.6666 52.5892 17.4778 54.778 14.7777 54.778V54.778C12.0777 54.778 9.88885 52.5892 9.88885 49.8891V44.8256" stroke="#444444" stroke-width="2.5"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="65" height="55" fill="white"/>
+</clipPath>
+</defs>
+</svg>
